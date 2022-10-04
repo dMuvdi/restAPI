@@ -1,0 +1,30 @@
+<div class="content mt-5 ms-5">
+    <div>
+        <h1 class="ms-5">Stores</h1>
+        <button class="btn btn-success ms-5 mt-2"><a>Add New Store</a></button>
+    </div>
+    
+    <div class="container">
+        <div 
+            *ngFor="let store of storeArray"
+            class="row hidden-md-up">
+            <div *ngFor="let item of store" class="col-md-4">
+                <div class="card mt-4" style="width: 18rem;">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ item.name }}</h4>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li 
+                            *ngFor="let product of item.item"
+                            class="list-group-item">
+                            {{ product.name }} {{ product.price}}$
+                        </li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="btn btn-success">Add Item</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
