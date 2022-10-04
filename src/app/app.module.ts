@@ -11,6 +11,7 @@ import { NavbarComponent } from './models/navbar/navbar.component';
 
 import { HttpClientModule } from '@angular/common/http'
 import { StoreServiceService } from './store-service.service';
+import { AddStoreComponent } from './models/add-store/add-store.component';
 
 
 
@@ -19,7 +20,8 @@ import { StoreServiceService } from './store-service.service';
     AppComponent,
     AboutComponent,
     StoresComponent,
-    NavbarComponent
+    NavbarComponent,
+    AddStoreComponent
   ],
   imports: [
     BrowserModule,
@@ -28,6 +30,7 @@ import { StoreServiceService } from './store-service.service';
     RouterModule.forRoot([
       {path: '', component:StoresComponent},
       {path:'about', component:AboutComponent},
+      {path: 'addStore', component:AddStoreComponent},
       {path:'**', redirectTo:'', pathMatch:'full'}
     ])
   ],
