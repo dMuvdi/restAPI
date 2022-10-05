@@ -21,9 +21,9 @@ export class StoresComponent implements OnInit {
 
   public loadData(){
     this.storeService.getStores('http://localhost:5000/store')
-    .subscribe(response =>{
-      this.storeArray = Object.values(Object.values(response));
-      console.log(Object.values(Object.values(response)));
+    .subscribe(response => {
+      this.storeArray = Object.values(response);
+      console.log(Object.values(response));
     })
   }
 

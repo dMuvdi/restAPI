@@ -13,11 +13,10 @@
                     <div class="card-body">
                         <h4 class="card-title">{{ item.name }}</h4>
                     </div>
-                    <ul class="list-group list-group-flush">
-                        <li 
-                            *ngFor="let product of item.item"
-                            class="list-group-item">
-                            {{ product.name }} {{ product.price}}$
+                    <ul *ngFor="let product of item.item;  let i = index" class="list-group list-group-flush">
+                        <h5 class="ms-3 mt-2 mb-1">Item {{ i+1 }}</h5>
+                        <li class="list-group-item">
+                            {{ product.name }} - {{ product.price}}$
                         </li>
                     </ul>
                     <div class="card-body">
