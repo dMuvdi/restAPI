@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostBinding, OnInit } from '@angular/core';
+import { flatMap } from 'rxjs';
 
 @Component({
   selector: 'app-navbar',
