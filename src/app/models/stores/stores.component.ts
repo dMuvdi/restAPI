@@ -25,5 +25,4 @@ export class StoresComponent implements OnInit {
       console.log(Object.values(response));
     })
   }
-
 }
