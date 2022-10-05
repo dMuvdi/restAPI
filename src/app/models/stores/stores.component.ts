@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Store } from 'src/app/store';
 import { StoreServiceService } from 'src/app/store-service.service';
 
 
